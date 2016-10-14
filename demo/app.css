@@ -1,0 +1,117 @@
+html {
+  &, * {
+    box-sizing: border-box;
+  }
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background: #282838;
+  color: #ccc;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-weight: 300;
+}
+
+.App {
+  height: 100%;
+}
+
+.App-title {
+  position: relative;
+  padding: 8px 0;
+  border-bottom: 1px dashed #444261;
+  color: #ab8989;
+  text-align: center;
+}
+
+.App-github {
+  max-width: 360px;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-container {
+  position: relative;
+  padding: 2em 0;
+}
+
+.App-demo {
+  width: 25%;
+  min-height: 150px;
+  margin-bottom: 4em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+.App-loader {
+  margin: 1em auto;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.App-code {
+  max-width: 320px;
+  padding: 4px 1em;
+  margin: auto 8px;
+  background: rgba(255, 243, 243, 0.07);
+  color: #cc7171;
+  border-radius: 3px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .App-code {
+    display: none;
+  }
+
+  .App-demo {
+    padding: 0;
+    width: 50%;
+    margin-bottom: 2em;
+    min-height: 25%;
+  }
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+}
+
+.close-line {
+  /*stroke: #eee;*/
+  fill: #eee;
+  /*stroke-width: 3;*/
+  height: 20px;
+  width: 4px;
+  rx: 1;
+  ry: 1;
+  transform-origin: center;
+
+  &:first-child {
+    transform: rotate(45deg);
+  }
+
+  &:last-child {
+    transform: rotate(-45deg);
+  }
+}

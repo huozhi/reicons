@@ -1,0 +1,9 @@
+.Plus {
+  .Plus-line {
+    transform-origin: center;
+
+    &:first-child {
+      transform: rotate(90deg);
+    }
+  }
+}
