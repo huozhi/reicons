@@ -1,7 +1,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 import {
-  Plus, Add, Traingle, Clock
+  Plus, Add, Triangle, Clock
 } from 'reicons'
 import './app.css'
 
@@ -17,8 +17,8 @@ const loaders = [
     code: '<Add size={40} color={color} thickness={3} dash={[8, 4]} />',
   },
   {
-    node: <Traingle color={color} size={40} thickness={2} />,
-    code: '<Traingle color={color} size={40} thickness={2} />',
+    node: <Triangle color={color} size={40} thickness={2} />,
+    code: '<Triangle color={color} size={40} thickness={2} />',
   },
   {
     node: <Clock size={40} hour={2} minute={45} color={color} thickness={2} />,

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Traingle = ({size, color, rotate, thickness}) => {
+const Triangle = ({size, color, rotate, thickness}) => {
   const height = (size / 2) / Math.tan(30 / 180 * Math.PI)
   const vertiMove = (size - height + thickness) / 2
   const points = [
@@ -10,7 +10,7 @@ const Traingle = ({size, color, rotate, thickness}) => {
   ].map(point => point.join())
 
   return (
-    <svg className="Traingle" width={size} height={size}>
+    <svg className="Triangle" width={size} height={size}>
       <polygon
         strokeWidth={thickness}
         stroke={color}
@@ -22,4 +22,4 @@ const Traingle = ({size, color, rotate, thickness}) => {
   )
 }
 
-export default Traingle
+export default Triangle
