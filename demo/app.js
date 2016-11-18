@@ -1,7 +1,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 import {
-  Plus, Add, Triangle, Clock
+  Cross, Add, Triangle, Clock
 } from 'reicons'
 import './app.css'
 
@@ -9,8 +9,8 @@ const color = '#4197ff'
 
 const loaders = [
   {
-    node: <Plus size={32} color={color} thickness={2} rotate={45} />,
-    code: '<Plus size={32} color={color} thickness={2} rotate={45} />',
+    node: <Cross size={32} color={color} strokeWidth={3} rotate={0} />,
+    code: '<Cross size={32} color={color} strokeWidth={3} rotate={0} />',
   },
   {
     node: <Add size={40} color={color} thickness={3} dash={[8, 4]} />,
