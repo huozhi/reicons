@@ -24,12 +24,12 @@ const Clock = ({color, size, thickness, minute, hour}) => {
       />
       <rect
         className="Clock-minute"
-        transform={`rotate(${(minute / 60 * 180 + 180) % 360}, ${size / 2}, ${size / 2})`}
+        transform={`rotate(${(minute / 60) * 360 - 180}, ${size / 2}, ${size / 2})`}
         {...needleProps}
       />
       <rect
         className="Clock-hour"
-        transform={`rotate(${(hour / 12 * 180 + 180) % 360}, ${size / 2}, ${size / 2})`}
+        transform={`rotate(${(hour / 24) * 360 - 180}, ${size / 2}, ${size / 2})`}
         {...needleProps}
       />
     </svg>

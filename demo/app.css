@@ -15,7 +15,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  background: #282838;
+  background: #1f2b3c;
   color: #ccc;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -48,11 +48,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .App-container {
   position: relative;
-  padding: 2em 0;
+  padding: 2em;
 }
 
 .App-demo {
-  width: 25%;
+  width: 50%;
+  padding: 0 12px;
   min-height: 150px;
   margin-bottom: 4em;
   display: inline-flex;
@@ -60,6 +61,12 @@ h1, h2, h3, h4, h5, h6, p, span {
   justify-content: center;
   flex-direction: column;
   vertical-align: middle;
+
+  .playground {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .App-loader {
@@ -98,9 +105,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .close-line {
-  /*stroke: #eee;*/
   fill: #eee;
-  /*stroke-width: 3;*/
   height: 20px;
   width: 4px;
   rx: 1;
@@ -113,5 +118,21 @@ h1, h2, h3, h4, h5, h6, p, span {
 
   &:last-child {
     transform: rotate(-45deg);
+  }
+}
+
+.playground {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  height: 150px;
+
+  .CodeMirror {
+    height: 60px;
+  }
+
+  .playgroundPreview {
+    text-align: center;
+    margin: 20px auto;
   }
 }
