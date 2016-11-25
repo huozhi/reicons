@@ -10,23 +10,19 @@ const color = '#4197ff'
 
 const loaders = [
   {
-    node: <Cross size={32} color="#4197ff" strokeWidth={3} rotate={0} />,
-    code: '<Cross size={32} color="#4197ff" strokeWidth={3} rotate={0} />',
+    code: `<Cross length={40} size={40} color="#4197ff" strokeWidth={3} rotate={0} />`,
     component: {Cross},
   },
   {
-    node: <Add size={40} color="#4197ff" thickness={3} dash={[8, 4]} />,
-    code: '<Add size={40} color="#4197ff" thickness={3} dash={[8, 4]} />',
+    code: `<Add size={40} color="#4197ff" thickness={3} dash={[8, 4]} />`,
     component: {Add},
   },
   {
-    node: <Triangle color="#4197ff" size={40} thickness={2} />,
-    code: '<Triangle color="#4197ff" size={40} thickness={2} />',
+    code: `<Triangle color="#4197ff" size={40} thickness={2} />`,
     component: {Triangle} ,
   },
   {
-    node: <Clock size={40} hour={2} minute={45} color="#4197ff" thickness={2} />,
-    code: '<Clock size={40} hour={2} minute={45} color="#4197ff" thickness={2} />',
+    code: `<Clock size={40} hour={2} minute={45} color="#4197ff" thickness={2} />`,
     component: {Clock},
   },
 ]
@@ -36,12 +32,13 @@ const repo = 'reicons'
 const title = 'React SVG Icons'
 
 const App = () => (
+
   <div className="App">
     <div className="App-title">
       <h1>{title}</h1>
     </div>
     <div className="App-container">
-      {loaders.map(({node, code, component}, idx) => (
+      {loaders.map(({code, component}, idx) => (
         <div key={idx} className="App-demo">
           <Playground
             theme="paraiso-dark"

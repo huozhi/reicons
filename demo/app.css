@@ -15,7 +15,7 @@ body {
   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  background: #1f2b3c;
+  background: #282838;
   color: #ccc;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
   .CodeMirror {
     height: 60px;
+    background: rgba(255, 243, 243, 0.07);
   }
 
   .playgroundPreview {
